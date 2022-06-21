@@ -14,20 +14,25 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
+    // Eyeball sack
     public static final Block EYEBALL_SACK = registerBlock("eyeball_sack",
-            new Block(FabricBlockSettings.of(Material.MOSS_BLOCK).strength(4f).requiresTool()), ModItemGroup.HIDEOUS_MASS);
+            new Block(FabricBlockSettings.of(Material.LEAVES).strength(0.3f).requiresTool()), ModItemGroup.HIDEOUS_MASS);
 
 
+    // Method to register a new block
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);
         return Registry.register(Registry.BLOCK, new Identifier(HideousMass.MOD_ID, name), block);
     }
 
+    // Method to register a new blocks item variant
+    // Called by 'registerBlock' method
     private static Item registerBlockItem(String name, Block block, ItemGroup tab) {
         return Registry.register(Registry.ITEM, new Identifier(HideousMass.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings().group(tab)));
     }
 
+    // 'Registers' the mods blocks
     public static void registerModBlocks() {
         HideousMass.LOGGER.debug("Registering mod blocks for " + HideousMass.MOD_ID);
     }
