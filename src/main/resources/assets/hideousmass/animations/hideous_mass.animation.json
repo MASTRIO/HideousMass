@@ -35,11 +35,73 @@
 							"vector": [0, 0, 0]
 						},
 						"0.0417": {
-							"vector": [0, 0, -2]
+							"vector": [0, 0, -6]
 						},
 						"0.75": {
 							"vector": [0, 0, 0],
 							"easing": "easeOutSine"
+						}
+					}
+				}
+			}
+		},
+		"animation.hideous_mass.moving": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"big_mound_1": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.125": {
+							"vector": [0, 0, 3],
+							"easing": "easeOutSine"
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"big_mound_2": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.125": {
+							"vector": [0, 0, 3],
+							"easing": "easeOutSine"
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"big_mound_3": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.125": {
+							"vector": [0, 0, 3],
+							"easing": "easeOutSine"
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"big_mound_4": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.125": {
+							"vector": [0, 0, 3],
+							"easing": "easeOutSine"
+						},
+						"0.5": {
+							"vector": [0, 0, 0]
 						}
 					}
 				}

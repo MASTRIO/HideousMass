@@ -16,7 +16,7 @@ public class ModBlocks {
 
     // Eyeball sack
     public static final Block EYEBALL_SACK = registerBlock("eyeball_sack",
-            new Block(FabricBlockSettings.of(Material.LEAVES).strength(0.5f)), ModItemGroup.HIDEOUS_MASS);
+            new Block(FabricBlockSettings.of(Material.LEAVES).strength(0.5f).hardness(2.5f)), ModItemGroup.HIDEOUS_MASS);
 
 
     // Method to register a new block
