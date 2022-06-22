@@ -22,7 +22,7 @@ public class HideousMassModel extends AnimatedGeoModel<HideousMassEntity> {
 
     @Override
     public Identifier getAnimationResource(HideousMassEntity animatable) {
-        return new Identifier(HideousMass.MOD_ID, "animation/hideous_mass.animation.json");
+        return new Identifier(HideousMass.MOD_ID, "animations/hideous_mass.animation.json");
     }
 
     @SuppressWarnings({ "unchecked", "rawtypes" })

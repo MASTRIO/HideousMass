@@ -56,7 +56,7 @@ public class HideousMassEntity extends AnimalEntity implements IAnimatable {
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if (event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.hideous_mass.attack", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.hideous_mass.moving", true));
             return PlayState.CONTINUE;
         }
 

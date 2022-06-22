@@ -1,9 +1,9 @@
 package net.mastrio.hideousmass.entity.client;
 
+import net.mastrio.hideousmass.HideousMass;
 import net.mastrio.hideousmass.entity.custom.HideousMassEntity;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.util.Identifier;
-import software.bernie.geckolib3.model.AnimatedGeoModel;
 import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
 
 public class HideousMassRenderer extends GeoEntityRenderer<HideousMassEntity> {
@@ -13,8 +13,7 @@ public class HideousMassRenderer extends GeoEntityRenderer<HideousMassEntity> {
     }
 
     @Override
-    public Identifier getTextureLocation(HideousMassEntity instance) {
-        return super.getTextureLocation(instance);
+    public Identifier getTexture(HideousMassEntity entity) {
+        return new Identifier(HideousMass.MOD_ID, "textures/entity/hideous_mass.png");
     }
-
 }
