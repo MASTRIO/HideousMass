@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 600,
+  "experience": 0.4,
+  "ingredient": {
+    "item": "minecraft:finger"
+  },
+  "result": "minecraft:roasted_finger"
+}

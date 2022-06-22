@@ -16,6 +16,10 @@ public class ModItems {
     public static final Item FINGER = registerItem("finger",
             new Item(new FabricItemSettings().group(ModItemGroup.HIDEOUS_MASS)));
 
+    // Roasted Finger
+    public static final Item ROASTED_FINGER = registerItem("roasted_finger",
+            new Item(new FabricItemSettings().group(ModItemGroup.HIDEOUS_MASS)));
+
 
     // Method to register an item
     private static Item registerItem(String name, Item item) {
