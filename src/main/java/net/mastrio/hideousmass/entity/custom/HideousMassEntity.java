@@ -1,5 +1,6 @@
 package net.mastrio.hideousmass.entity.custom;
 
+import net.mastrio.hideousmass.HideousMass;
 import net.mastrio.hideousmass.goals.FlyRandomlyGoal;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityType;
@@ -45,11 +46,16 @@ public class HideousMassEntity extends FlyingEntity implements Monster, IAnimata
     }
 
     protected void initGoals() {
-        this.goalSelector.add(0, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
+        this.goalSelector.add(0, new ActiveTargetGoal<PlayerEntity>(this, PlayerEntity.class, true));
+        //this.goalSelector.add(0, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
         this.goalSelector.add(1, new FlyRandomlyGoal(this));
     }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
+        if (this.getTarget() != null) {
+            HideousMass.LOGGER.debug(String.valueOf(this.getTarget()));
+        }
+
         if (event.isMoving()) {
             event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.hideous_mass.moving", true));
             return PlayState.CONTINUE;
