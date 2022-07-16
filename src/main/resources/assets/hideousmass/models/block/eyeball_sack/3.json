@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+	"all": "hideousmass:variated/eyeball_sack/3"
+    }
+}

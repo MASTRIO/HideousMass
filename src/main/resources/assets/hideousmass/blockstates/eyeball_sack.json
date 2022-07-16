@@ -1,5 +1,18 @@
 {
   "variants": {
-    "": { "model": "hideousmass:block/eyeball_sack" }
+    "": [
+      {
+        "model": "hideousmass:block/eyeball_sack/0"
+      },
+      {
+        "model": "hideousmass:block/eyeball_sack/1"
+      },
+      {
+        "model": "hideousmass:block/eyeball_sack/2"
+      },
+      {
+        "model": "hideousmass:block/eyeball_sack/3"
+      }
+    ]
   }
 }
