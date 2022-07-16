@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "hideousmass:block/pillar_of_the_eye_top",
+    "side": "hideousmass:block/pillar_of_the_eye"
+  }
+}

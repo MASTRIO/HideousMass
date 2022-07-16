@@ -46,7 +46,7 @@ public class HideousMassEntity extends FlyingEntity implements Monster, IAnimata
     }
 
     protected void initGoals() {
-        this.goalSelector.add(0, new ActiveTargetGoal<PlayerEntity>(this, PlayerEntity.class, true));
+        //this.goalSelector.add(0, new ActiveTargetGoal<PlayerEntity>(this, PlayerEntity.class, true));
         //this.goalSelector.add(0, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
         this.goalSelector.add(1, new FlyRandomlyGoal(this));
     }

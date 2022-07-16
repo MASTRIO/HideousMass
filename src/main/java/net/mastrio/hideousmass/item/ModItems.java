@@ -3,6 +3,8 @@ package net.mastrio.hideousmass.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.mastrio.hideousmass.HideousMass;
 import net.mastrio.hideousmass.entity.ModEntities;
+import net.minecraft.item.FoodComponent;
+import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.Identifier;
@@ -21,6 +23,12 @@ public class ModItems {
     // Roasted Finger
     public static final Item ROASTED_FINGER = registerItem("roasted_finger",
             new Item(new FabricItemSettings().group(ModItemGroup.HIDEOUS_MASS)));
+
+    // Bottle of blood
+    public static final Item BOTTLE_OF_BLOOD = registerItem("bottle_of_blood",
+            new Item(new FabricItemSettings().group(ModItemGroup.HIDEOUS_MASS).food(
+                    FoodComponents.APPLE
+            )));
 
     //// Spawn Eggs
     // Hideous Mass spawn egg
