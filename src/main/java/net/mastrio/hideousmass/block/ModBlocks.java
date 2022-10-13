@@ -16,12 +16,19 @@ public class ModBlocks {
 
     // Eyeball sack
     public static final Block EYEBALL_SACK = registerBlock("eyeball_sack",
-            new Block(FabricBlockSettings.of(Material.LEAVES).strength(0.5f).hardness(2.5f)), ModItemGroup.HIDEOUS_MASS);
+            new Block(FabricBlockSettings.of(Material.LEAVES).strength(0.5f).hardness(1.0f)), ModItemGroup.HIDEOUS_MASS);
 
     // Pillar Of The Eye
     public static final Block PILLAR_OF_THE_EYE = registerBlock("pillar_of_the_eye",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(3f).hardness(20f)), ModItemGroup.HIDEOUS_MASS);
+            new Block(FabricBlockSettings.of(Material.STONE).strength(12f).hardness(5f)), ModItemGroup.HIDEOUS_MASS);
 
+    // Blood Clot
+    public static final Block BLOOD_CLOT = registerBlock("blood_clot",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(10f).hardness(10f)), ModItemGroup.HIDEOUS_MASS);
+
+    // Skin
+    public static final Block SKIN = registerBlock("skin",
+            new Block(FabricBlockSettings.of(Material.SOLID_ORGANIC).strength(4f).hardness(0.6f)), ModItemGroup.HIDEOUS_MASS);
 
     // Method to register a new block
     private static Block registerBlock(String name, Block block, ItemGroup tab) {

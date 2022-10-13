@@ -41,7 +41,7 @@ public class HideousMassEntity extends FlyingEntity implements Monster, IAnimata
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 50.0D)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 8.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 2.0f)
-                //.add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 2.0f)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 2.0f)
                 .add(EntityAttributes.GENERIC_FLYING_SPEED, 2.0f);
     }
 

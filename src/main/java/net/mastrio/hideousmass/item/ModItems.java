@@ -12,6 +12,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
 
+    //// Normal Items
     // Bloody Eyeball
     public static final Item BLOODY_EYEBALL = registerItem("bloody_eyeball",
             new Item(new FabricItemSettings().group(ModItemGroup.HIDEOUS_MASS)));
@@ -22,13 +23,11 @@ public class ModItems {
 
     // Roasted Finger
     public static final Item ROASTED_FINGER = registerItem("roasted_finger",
-            new Item(new FabricItemSettings().group(ModItemGroup.HIDEOUS_MASS)));
+            new Item(new FabricItemSettings().group(ModItemGroup.HIDEOUS_MASS).food(FoodComponents.MELON_SLICE)));
 
     // Bottle of blood
     public static final Item BOTTLE_OF_BLOOD = registerItem("bottle_of_blood",
-            new Item(new FabricItemSettings().group(ModItemGroup.HIDEOUS_MASS).food(
-                    FoodComponents.APPLE
-            )));
+            new Item(new FabricItemSettings().group(ModItemGroup.HIDEOUS_MASS)));
 
     //// Spawn Eggs
     // Hideous Mass spawn egg
