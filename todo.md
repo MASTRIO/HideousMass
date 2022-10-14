@@ -1,12 +1,13 @@
-- [] Make texture for Blood Clot
+- [X] Make texture for Blood Clot
     - [X] Make texture display
-- [] Add skin block
-    - [] Make Texture
+- [X] Add skin block
+    - [X] Make Texture
 - [] Add blood liquid
 - [] Make blood sac sructure thing
     - [] give better name
 - [] Add translations for lolcat and pirate speak
 - [] Fix inventory rendering of eyeball sack
 - [] Fix inventory rendering of eye pillar
-    - [] fix rendering of eye pillar
+    - [] fix eye pillar texture
+- [] Fix inventory rendering of every single fucking block
 - [X] add optimisation mods to client
